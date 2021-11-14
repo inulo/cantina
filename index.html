@@ -1,155 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1"
-    />
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <meta name="description" content="Cantina" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
     <title>Cantina</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css" />
-    <link
-      rel="stylesheet"
-      href="assets/bootstrap/css/bootstrap-reboot.min.css"
-    />
-    <link rel="stylesheet" href="assets/theme/css/style.css" />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap&display=swap"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript
-      ><link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap&display=swap"
-    /></noscript>
-    <link
-      rel="preload"
-      as="style"
-      href="assets/mobirise/css/mbr-additional.css"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/mobirise/css/mbr-additional.css"
-      type="text/css"
-    />
-  </head>
-  <body>
-    <section
-      data-bs-version="5.1"
-      class="countdown2 cid-sM04ivPzwo mbr-fullscreen"
-      id="countdown2-2"
-    >
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h3
-              class="
-                mbr-section-title
-                mb-5
-                align-center
-                mbr-fonts-style
-                display-2
-              "
-            >
-              <strong>Brevemente disponível</strong>
-            </h3>
 
-            <div class="countdown-cont align-center mb-5">
-              <div
-                class="daysCountdown col-xs-3 col-sm-3 col-md-3"
-                title="Days"
-              ></div>
-              <div
-                class="hoursCountdown col-xs-3 col-sm-3 col-md-3"
-                title="Hours"
-              ></div>
-              <div
-                class="minutesCountdown col-xs-3 col-sm-3 col-md-3"
-                title="Minutes"
-              ></div>
-              <div
-                class="secondsCountdown col-xs-3 col-sm-3 col-md-3"
-                title="Seconds"
-              ></div>
-              <div class="countdown" data-due-date="2021/12/15"></div>
-            </div>
-            <p class="mbr-text mb-5 align-center mbr-fonts-style display-7">
-              Inscreva-se para saber quando lançaremos.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 mx-auto mbr-form" data-form-type="formoid">
-            <form
-              action="https://mobirise.eu/"
-              method="POST"
-              class="mbr-form form-with-styler"
-              data-form-title="Form Name"
-            >
-              <input
-                type="hidden"
-                name="email"
-                data-form-email="true"
-                value="Y8WghvP2Fnqct6LSAUYIW00Wlaq1qHHMjVCqevdZz/r52Fu+3hwJ6gd1wuezPRazRIbPiE8PRRn1DRN5PUpHHTWlVxVocLtC9c8K/i1TSjcqt9II1az314W1tJ3EPrM0"
-              />
-              <div class="row">
-                <div
-                  hidden="hidden"
-                  data-form-alert=""
-                  class="alert alert-success col-12"
-                >
-                  Obrigado por preencher o formulário!
-                </div>
-                <div
-                  hidden="hidden"
-                  data-form-alert-danger=""
-                  class="alert alert-danger col-12"
-                >
-                  Ops...! algum problema!
-                </div>
-              </div>
-              <div class="dragArea row">
-                <div class="col form-group" data-for="email">
-                  <input
-                    type="text"
-                    name="email"
-                    placeholder="Email"
-                    data-form-field="email"
-                    class="form-control"
-                    required="required"
-                    value=""
-                    id="email-countdown2-2"
-                  />
-                </div>
-                <div class="mbr-section-btn">
-                  <button type="submit" class="btn btn-warning display-4">
-                    Inscreva-se
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.css" />
+    <link rel="stylesheet" href="/build/bundle.css" />
+
+    <script defer src="/build/bundle.js"></script>
+
+    <title>Cantina</title>
+  </head>
+
+  <body>
+    <div class="modal is-active notification">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="notification is-danger">
+          <strong>Brevemente disponível para registros!!!</strong>
         </div>
       </div>
-    </section>
-
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/smoothscroll/smooth-scroll.js"></script>
-    <script src="assets/ytplayer/index.js"></script>
-    <script src="assets/countdown/countdown.js"></script>
-    <script src="assets/theme/js/script.js"></script>
-    <script src="assets/formoid/formoid.min.js"></script>
+      <button class="modal-close is-large delete" aria-label="close"></button>
+    </div>
   </body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      ;(document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+        const $notification = $delete.parentNode
+
+        $delete.addEventListener('click', () => {
+          $notification.parentNode.removeChild($notification)
+        })
+      })
+    })
+  </script>
 </html>
